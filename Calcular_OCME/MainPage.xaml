@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calcular_OCME.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Entry Placeholder="Nombre" x:Name="Name" Keyboard="Text"> </Entry>
+
+        <StackLayout Orientation="Horizontal">
+            <RadioButton  Value="Hombre" x:Name="Hom" IsChecked="False"></RadioButton>
+        <Label>Hombre</Label>
+        <RadioButton  Value="Mujer" x:Name="Muj" IsChecked="False"></RadioButton>
+        <Label>Mujer</Label>
+          </StackLayout>
+
+
+        <StackLayout Orientation="Horizontal">
+                <CheckBox x:Name="Alto" VerticalOptions="Start" Color="Blue" IsChecked="False" /><Label>Alto</Label>
+                <CheckBox x:Name="Feo" VerticalOptions="Center" Color="Blue" IsChecked="False" /><Label>feo</Label>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal">
+        <CheckBox x:Name="Extravagante" VerticalOptions="End" Color="Blue" IsChecked="False" /><Label>Extravagante</Label>
+            <CheckBox x:Name="Raro" VerticalOptions="Start" Color="Blue" IsChecked="False"/><Label>Raro</Label>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal">
+            <CheckBox  x:Name="Grande" VerticalOptions="Center" Color="Blue" IsChecked="False" /><Label>Grande</Label>
+            <CheckBox x:Name="Listo" VerticalOptions="End" Color="Blue" IsChecked="False" /><Label>Listo</Label>
+        </StackLayout>
+
+
+        <Button Text="CRITICAR" Clicked="OnCriticarClicked"/>
+        
+    </StackLayout>
+
+</ContentPage>
